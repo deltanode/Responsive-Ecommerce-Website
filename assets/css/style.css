@@ -1,0 +1,201 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+/* ==== css variables ==== */
+:root{
+    --header-height: 3rem;       /* 48px */
+    --font-semi: 600;
+    --font-bold: 700;
+}
+
+/* colores */
+:root{
+    --first-color: #E55947;
+    --first-color-alt: #D2321E;
+    --white-color: #FAFAFF;
+    --dark-color: #101010;
+    --dark-color-light: #606060;
+    --grey-color: #F0F1F3;
+}
+
+/* font and typography */
+:root{
+    --body-font: 'Open Sans', sans-serif;
+    --big-font-size: 3rem;           /* 48px */
+    --h1-font-size: 1.5rem;          /* 24px */
+    --h2-font-size: 1.25rem;         /* 20px */
+    --normal-font-size: .938rem;     /* 15px */
+    --small-font-size: .75rem;       /* 12px */
+}
+
+@media screen and (min-width:768px ){
+    :root{
+        --big-font-size: 6rem;       /* 96px */
+        --h1-font-size: 2.25rem;     /* 36px */
+        --h2-font-size: 1.5rem;      /* 24px */
+        --normal-font-size: 1rem;    /* 16px */
+        --small-font-size: .813rem;  /* 13px */
+    }
+
+}
+
+/* margins */
+:root{
+    --mb-1: .5rem;    /* 8px */
+    --mb-2: 1rem;     /* 16px */
+    --mb-3: 1.5rem;   /* 24px */
+    --mb-4: 2rem;     /* 32px */
+}
+
+/* z-index */
+:root{
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* ==== base ==== */
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+h1,h2,p{
+    margin: 0;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-color)
+}
+
+img{
+    max-width: 100%; 
+    height: auto;
+}
+
+/* class css */
+.section{
+    padding: 3rem 0;
+}
+
+.section-title{
+    font-size: var(--h2-font-size);
+    color: var(--dark-color);
+    margin: var(--mb-4) 0 var(--mb-1);
+    text-align: center;
+}
+
+.section-all{
+    display:block;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi);
+    color: var(--dark-color-light);
+    text-align: center;
+    margin-bottom: var(--mb-2);
+}
+
+/* layout */
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3); 
+}
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: var(--z-fixed);
+    background-color: var(--grey-color);
+}
+
+/* nav */
+.nav{
+    height: var(--header-height);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .nav__menu{
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--white-color);
+        transition: 0.5s;
+    }
+}
+
+.nav__item{
+    margin-bottom: var(--mb-4);
+}
+
+.nav__link{
+    color: var(--dark-color);
+    font-weight: var(--font-semi);
+}
+
+.nav__link:hover{
+    color: var(--first-color);
+}
+
+.nav__logo{
+    font-weight: var(--font-bold);
+}
+
+.nav__cart{
+    font-size: 1.5rem;
+    margin-right: var(--mb-2);
+}
+
+.nav__toggle{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.active{
+    color: var(--first-color);
+}
+
+/* show menu */
+.show{
+    right:0;
+}
+
+/* home */
+
+
+/* buttons */
+
+
+/* collection */
+
+
+/* featured products */
+
