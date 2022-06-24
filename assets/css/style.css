@@ -1,7 +1,8 @@
-/* google fonts */
+/*==== GOOGLE FONTS ====*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
-/* ==== css variables ==== */
+
+/*==== CSS VARIABLES ====*/
 :root{
     --header-height: 3rem;       /* 48px */
     --font-semi: 600;
@@ -36,7 +37,6 @@
         --normal-font-size: 1rem;    /* 16px */
         --small-font-size: .813rem;  /* 13px */
     }
-
 }
 
 /* margins */
@@ -53,7 +53,8 @@
     --z-fixed: 100;
 }
 
-/* ==== base ==== */
+
+/* ==== BASE ==== */
 *,::before,::after{
     box-sizing: border-box;
 }
@@ -131,7 +132,7 @@ img{
     background-color: var(--grey-color);
 }
 
-/* nav */
+/*==== NAV ====*/
 .nav{
     height: var(--header-height);
     display:flex;
@@ -179,23 +180,64 @@ img{
     cursor: pointer;
 }
 
-.active{
-    color: var(--first-color);
-}
-
 /* show menu */
 .show{
     right:0;
 }
 
-/* home */
+.active{
+    color: var(--first-color);
+}
+
+/*==== HOME ====*/
+.home{
+    background-color: var(--grey-color);
+}
+
+.home__container{
+    height: calc(100vh - var(--header-height));
+}
+
+.home__data{
+    padding-top: 6rem ;
+}
+
+.home__title{
+    align-self: center;
+    font-size: var(--big-font-size);
+    line-height: 1;
+    letter-spacing: .5rem;
+    margin-bottom: 4rem;
+}
+
+.home__title span{
+    font-size: var(--h1-font-size);
+}
+
+.home__img{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    width: 260px;
+}
+
+/* BUTTONS */
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 1rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi);
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+/*==== COLLECTIONS ====*/
 
 
-/* buttons */
-
-
-/* collection */
-
-
-/* featured products */
+/*==== FEATURED PRODUCTS ====*/
 
