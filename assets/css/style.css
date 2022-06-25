@@ -284,4 +284,58 @@ img{
 
 
 /*==== FEATURED PRODUCTS ====*/
+.featured__conatiner{
+    row-gap: 2rem;
+}
 
+.featured__product{
+    transition: .3s;
+    margin-bottom: var(--mb-2);
+}
+
+.featured__product:hover{
+    transform: translateY(-.5rem);
+}
+
+.featured__box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey-color);
+}
+
+.featured__new{ 
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: .3rem .75rem;
+    font-size: var(--small-font-size);
+}
+
+.featured__data{
+    text-align: center;
+}
+
+.featured__name{
+    margin-bottom: var(--mb-1);
+    text-transform: uppercase;
+    font-size: var(--normal-font-size);
+}
+
+.featured__price{
+    color: var(--dark-color-light);
+    font-weight: var(--font-semi);
+}
+
+
+/*==== OFFERS ====*/
+
+/*==== NEW ARRIVALS ====*/
+
+/*==== NEWSLETTER ====*/
+
+/*==== SPONSORS ====*/
+
+/*==== FOOTER ====*/
