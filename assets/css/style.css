@@ -484,7 +484,7 @@ img{
     }
 
     .nav{
-        height: calc(--header-height) + 1rem;
+        height: calc(var(--header-height) + 1rem);
         justify-content: initial;
     }
 
