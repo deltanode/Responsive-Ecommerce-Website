@@ -1,8 +1,7 @@
-/* Show Menu  */
+// Make nav menu toggle in mobile version
 const showMenu = (toggleId, navId)=>{
     const toggle = document.getElementById(toggleId),
              nav = document.getElementById(navId);
-
 
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
@@ -11,21 +10,23 @@ const showMenu = (toggleId, navId)=>{
     }
 
 }
-
 showMenu('nav-toggle','nav-menu');
 
 
-/* Remove Menu Mobile */
-const navLink = document.querySelectorAll('.nav__link')
+// Update active nav link on click
+const navLinks = document.querySelectorAll('.nav__link')
 
-function linkAction(){
-    //  Active Link
-    navLink.forEach(n => n.classList.remove('active'))
-    this.classList.add('active')
+function removeAndAddActiveClass(e){
+    // remove active class
+    navLinks.forEach(link => link.classList.remove('active'))
+    
+    // add active class on clicked nav link
+    e.target.classList.add('active')
+    // this.classList.add('active')
 
-    // Remove menu mobile after selecting
+    // hide menu bar after selection in mobile version
     const navMenu = document.getElementById('nav-menu');
     navMenu.classList.remove('show');
 }
 
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLinks.forEach(link => link.addEventListener('click', removeAndAddActiveClass))
