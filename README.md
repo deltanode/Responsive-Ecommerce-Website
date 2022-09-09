@@ -1,12 +1,32 @@
-# Responsive-Ecommerce-Website 
 ![GitHub repo size](https://img.shields.io/github/repo-size/deltanode/responsive-ecommerce-website)
 ![GitHub stars](https://img.shields.io/github/stars/deltanode/responsive-ecommerce-website?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/deltanode/responsive-ecommerce-website?style=social)
 [![Twitter Follow](https://img.shields.io/twitter/follow/yogesh_yadv?style=social)](https://twitter.com/intent/follow?screen_name=yogesh_yadv)
 
-A fully responsive ecommerce website built using mobile first approach, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.
-<a href="https://deltanode.github.io/responsive-ecommerce-website/"><strong>➥ Live Demo</strong></a>
+# Responsive-Ecommerce-Website 
 
+- Responsive eCommerce Website Using HTML, CSS and JavaScript.
+- Developed first with the Mobile First methodology, then for desktop.
+- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+
+## Quick Reference
+
+| Project | Source Code |Action |
+| --- | --- | --- |
+| eCommerce Website | <ul><li>- [x] [HTML](index.html)</li><li>- [x] [CSS](assets/css/style.css)</li><li>- [x] [JavaScript](assets/js/script.js)</li></ul> | [➥Live Preview](https://deltanode.github.io/100DaysofCode/04-responsive-ecommerce-website/) |
+
+## Project Structure 📂
+```
+├── index.html
+├── assets
+│   ├── css
+│   │   └── style.css
+│   ├── js
+│   │   └── script.js
+│   └── img
+├── .gitignore
+└── README.md
+```
 
 ## Prerequisites
 
